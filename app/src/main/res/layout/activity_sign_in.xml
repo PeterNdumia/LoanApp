@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:layout_margin="20dp">
+    <TextView
+        android:id="@+id/signInLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"
+
+
+        />
+
+    <TextView
+        android:id="@+id/enterPhnLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your phone number"
+        android:layout_below="@id/signInLbl"
+        android:layout_marginTop="20dp"
+
+
+        />
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/enterPhnLbl"
+        android:background="@drawable/edittext_backgroud"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/enterPinLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your PIN"
+        android:layout_below="@id/phoneNumberEditText"
+        android:layout_marginTop="20dp"
+
+
+
+        />
+    <EditText
+        android:id="@+id/pinEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/enterPinLbl"
+        android:background="@drawable/edittext_backgroud"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:padding="5dp"
+        />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/pinEditText"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="SIGN IN"/>
+
+</RelativeLayout>

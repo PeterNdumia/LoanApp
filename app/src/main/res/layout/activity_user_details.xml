@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDetailsActivity"
+    android:layout_margin="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your information"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/regLabel"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regLabel">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/detFirstNamelbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your first name"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/detFirstNameEText"
+                android:layout_below="@id/detFirstNamelbl"
+                android:layout_marginTop="10dp"
+                android:inputType="none"
+                android:focusable="false"
+
+                />
+            <TextView
+                android:id="@+id/detLastNamelbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detFirstNameEText"
+                android:text="Enter your first name"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/detLastNameEText"
+                android:layout_below="@id/detLastNamelbl"
+                android:layout_marginTop="10dp"
+                android:inputType="none"
+                android:focusable="false"
+
+                />
+            <TextView
+                android:id="@+id/detIDnolbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detLastNameEText"
+                android:text="Enter your ID number"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/detIDnoEText"
+                android:layout_below="@id/detIDnolbl"
+                android:layout_marginTop="10dp"
+                android:inputType="none"
+
+                />
+            <TextView
+                android:id="@+id/detEmaillbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detIDnoEText"
+                android:text="Enter your email address"
+                android:layout_marginTop="20dp"
+                android:inputType="none"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/detEmailEText"
+                android:layout_below="@id/detEmaillbl"
+                android:layout_marginTop="10dp"
+                android:inputType="none"
+                android:focusable="false"
+
+                />
+
+            <TextView
+                android:id="@+id/detKinPhonelbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detEmailEText"
+                android:text="Enter your kin phone number"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/detKinPhoneEText"
+                android:layout_below="@id/detKinPhonelbl"
+                android:layout_marginTop="10dp"
+                android:inputType="none"
+                android:focusable="false"
+
+                />
+            <TextView
+                android:id="@+id/detKinNamelbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detKinPhoneEText"
+                android:text="Enter your next of Kin's name "
+                android:layout_marginTop="20dp"
+               />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/detKinNameEText"
+                android:layout_below="@id/detKinNamelbl"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/detKinEmaillbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detKinNameEText"
+                android:text="Enter your next of Kin's email "
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/detKinEmailEText"
+                android:layout_below="@id/detKinEmaillbl"
+                android:layout_marginTop="10dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/detKinRelationshiplbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detKinEmailEText"
+                android:text="Enter your relationship with kin"
+                android:layout_marginTop="20dp"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/detKinRelationshipSpinner"
+                android:layout_below="@id/detKinRelationshiplbl"
+                android:layout_marginTop="10dp"
+
+
+                />
+
+
+            <Button
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/submitdetailsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/detKinRelationshipSpinner"
+                android:layout_centerHorizontal="true"
+                android:text="Submit"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

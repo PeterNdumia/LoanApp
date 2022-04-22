@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:elevation="5dp"
+        android:background="@drawable/cardborder">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cardborder">
+        <TableLayout
+            android:id="@+id/topmbele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            >
+
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:text="Loan Amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textSize="15sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    />
+
+                <TextView
+                    android:id="@+id/loanAmountCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_column="2"
+                    android:layout_marginStart="10dp"/>
+            </TableRow>
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="5dp">
+                <TextView
+                    android:text="Loan Approval Date"
+                    android:textSize="15sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"/>
+                <TextView
+
+                    android:id="@+id/loandatecard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_column="2"
+                    android:layout_marginStart="10dp"/>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="5dp">
+                <TextView
+                    android:text="Repayment Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textSize="15sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView
+                    android:id="@+id/repaymentDateCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_column="2"
+
+                    />
+
+            </TableRow>
+
+
+        </TableLayout>
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

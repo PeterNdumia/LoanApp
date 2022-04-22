@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "9951425622",
+    "project_id": "loanapp-b7449",
+    "storage_bucket": "loanapp-b7449.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9951425622:android:6b54e61864fe1cbb4477f7",
+        "android_client_info": {
+          "package_name": "com.pete.apps.loan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9951425622-np1he2v3r3padmqp08ln0vga2d6gu90c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pete.apps.loan",
+            "certificate_hash": "f9ee1f10d868c43eead9e85f8e2342044d293b9e"
+          }
+        },
+        {
+          "client_id": "9951425622-f51na0vihtgb9mnud332pdqo3g8lsltf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAhIU2iEl9iWTAtFrwIGYkp2MPBaXa_2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9951425622-f51na0vihtgb9mnud332pdqo3g8lsltf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

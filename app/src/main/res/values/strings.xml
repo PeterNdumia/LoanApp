@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LoanApp</string>
+    <string name="welcometext">Welcome to LoanApp. You can easily get loans of upto KES 5000 instantly. All loans are repayable within 14 days after approval, failure to which will attract a penalty of 2% on the principal amount.</string>
+</resources>

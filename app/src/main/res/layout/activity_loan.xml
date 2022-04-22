@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanActivity"
+    android:layout_margin="20dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Application"
+        android:id="@+id/loanLabel"
+        android:textAlignment="center"
+       android:textSize="30dp"
+        android:textColor="@color/colorPrimary"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the amount you wish to apply for"
+        android:id="@+id/chooseloanLabel"
+        android:layout_below="@id/loanLabel"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/loanAmountSpinner"
+        android:layout_below="@id/chooseloanLabel"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+
+        android:singleLine="true">
+    </Spinner>
+
+
+
+    <TextView
+        android:id="@+id/repayPeriodLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a repayment period"
+        android:layout_below="@id/loanAmountSpinner"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/repayPeriodSpinner"
+        android:layout_below="@id/repayPeriodLabel"
+        android:layout_marginTop="10dp">
+
+    </Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="APPLY"
+        android:id="@+id/buttonApply"
+        android:layout_below="@id/repayPeriodSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+       android:background="@drawable/button_background"
+        android:textColor="@color/colorPrimary"
+        />
+
+</RelativeLayout>

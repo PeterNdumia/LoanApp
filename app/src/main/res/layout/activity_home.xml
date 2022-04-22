@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/cont"
+            android:layout_marginBottom="100dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="Welcome to LoanApp.Get loans of upto KES 3000"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textSize="25sp" />
+
+        <LinearLayout
+    android:id="@+id/cont"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="200dp">
+
+        <Button
+            android:id="@+id/buttonHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HISTORY"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="20dp"
+            android:drawableTop="@drawable/ic_baseline_history_edu_24"
+            android:background="@drawable/homebutton_background"/>
+        <Button
+            android:id="@+id/buttonRepayLOan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REPAY LOAN"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+           android:background="@drawable/homebutton_background"
+            android:drawableTop="@drawable/ic_baseline_payments_24"
+            android:paddingTop="20dp"
+            android:layout_marginStart="30dp"/>
+
+</LinearLayout>
+        <Button
+            android:id="@+id/buttonApply"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="APPLY NOW"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="@color/colorAccent"/>
+
+
+</RelativeLayout>
